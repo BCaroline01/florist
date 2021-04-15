@@ -22,14 +22,13 @@
                 </nav>
             </div>
             <div class='navMobile'>
-                <ul class="lines">
-                    <li class="top"></li>
-                    <li class="center"></li>
-                    <li class="bottom"></li>
-                </ul>
+                <div class="lines not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             <div class="menuHidden">
-                <span id="close">&times;</span>
                 <nav>
                     <ul>
                         <li><a href="#">Bouquets</a></li>
@@ -90,10 +89,20 @@
                     </div>
                     <div>
                     <label for="message">Description</label>
-                    <textarea rows="10" name="message" ></textarea>
+                    <textarea rows="10" name="message" required></textarea>
                     </div>
-                    <input type="submit" value="Envoyer" id="submit">
+                    <input type="submit" name="submit" value="Envoyer" id="submit">
                 </form>
+                <?php 
+                if(isset($_POST['submit'])){
+                    $dest = "caroline.webdev@gmail.com";
+                    $sujet = $_POST['subject'];
+                    $message = $_POST['message'];
+                    $header = 'From: ' .$_POST['mail'];
+
+                    mail($dest, $sujet, $message, $header);
+                }
+                ?>
             </div>
         </div>
     </main>

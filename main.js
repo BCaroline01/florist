@@ -6,16 +6,16 @@ var body = document.getElementsByTagName("body")[0];
 
 
 menu.addEventListener('click', function(){ 
+    menu.classList.toggle('active');   
+    menu.classList.toggle('not-active');
+
+if(menu.classList.contains('active')){
     toogle.style.display = "flex";
-    menu.style.display = "none";
     body.style.overflow = 'hidden';
-});
-
-var closebtn = document.getElementById("close");
-
-
-closebtn.addEventListener('click', function(){ 
+}else{
     toogle.style.display = "none";
-    menu.style.display = "flex";
-    body.style.overflow = 'scroll';
+    body.style.overflow = 'scroll'; 
+}
 });
+
+
