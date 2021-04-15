@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Courgette-Regular"), url("font/Courgette-Regular") format(".ttf");
+}
+
+@font-face {
+  font-family: 'Cambria';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cambria"), url("font/cambria/Cambria") format(".ttf");
+}
+
+/* HEADER */
+header .menu .desktopMenu nav {
+  background-color: #9db573;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu .desktopMenu nav ul {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+header .menu .desktopMenu nav ul a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Cambria';
+  font-size: 24px;
+}
+
+header .background_image {
+  background-image: url(images/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  color: #688776;
+  font-family: 'Courgette';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .background_image h1 {
+  font-size: 60px;
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+header .background_image p {
+  font-size: 30px;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+main .flower_arrangement {
+  color: #688776;
+  font-family: 'Cambria';
+}
+
+main .flower_arrangement h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(images/banniere_section.jpg);
+  height: 300px;
+  background-size: 100%;
+  font-size: 40px;
+  border: #688776 4px solid;
+}
+
+main .flower_arrangement article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .flower_arrangement article img {
+  margin: 50px;
+  width: 500px;
+}
+
+main .flower_arrangement article section {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .flower_arrangement article section p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+main .flower_arrangement article section button {
+  background-color: #688776;
+  font-family: 'Cambria';
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 40px;
+  cursor: pointer;
+}
+
+main .plants {
+  color: #688776;
+  font-family: 'Cambria';
+}
+
+main .plants h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(images/banniere_section.jpg);
+  height: 300px;
+  background-size: 100%;
+  font-size: 40px;
+  border: #688776 4px solid;
+}
+
+main .plants article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .plants article section {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .plants article section p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+main .plants article section button {
+  background-color: #688776;
+  font-family: 'Cambria';
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 40px;
+  cursor: pointer;
+}
+
+main .plants article img {
+  margin: 50px;
+  width: 400px;
+}
+
+main .contact {
+  color: #688776;
+  font-family: 'Cambria';
+}
+
+main .contact h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(images/banniere_section.jpg);
+  height: 300px;
+  background-size: 100%;
+  font-size: 40px;
+  border: #688776 4px solid;
+}
+
+main .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px;
+}
+
+main .contact div section p {
+  margin: 20px;
+  border-bottom: #688776 2px solid;
+  font-size: 25px;
+}
+
+main .contact div form {
+  border: #688776 2px solid;
+  background-image: url(images/succulente.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  margin: 20px;
+  width: 60%;
+  padding: 20px;
+}
+
+main .contact div form h3 {
+  padding: 20px;
+  font-size: 26px;
+}
+
+main .contact div form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+main .contact div form div label {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+main .contact div form div input {
+  border: #688776 1px solid;
+  border-radius: 5px;
+}
+
+main .contact div form #submit {
+  background-color: #688776;
+  font-family: 'Cambria';
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 40px;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #9db573;
+  height: 70px;
+}
+
+footer p {
+  color: white;
+  font-family: 'Cambria';
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .menu .desktopMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu .navMobile {
+    display: none;
+  }
+  .menu .menuHidden {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
