@@ -53,7 +53,7 @@
                 <img src="images/bouquet.jpg" alt="composition florale">
                 <section>
                     <p>Pour vous faire plaisir, ou pour une délicate attention , nos mélange floraux s’adaptent à toutes les occasions.<br>
-                    Découvrez les créations originales de nos artisans fleuristes, réalisées à parir de fleur fraîches.</p>
+                    </br>Découvrez les créations originales de nos artisans fleuristes, réalisées à parir de fleur fraîches.</p>
                     <button>Voir le catalogue</button>   
                 </section>
             </article>

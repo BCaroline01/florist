@@ -98,8 +98,9 @@ main .flower_arrangement h2 {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(images/banniere_section.jpg);
-  height: 300px;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 40vh;
   font-size: 40px;
   border: #688776 4px solid;
 }
@@ -171,8 +172,9 @@ main .plants h2 {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(images/banniere_section.jpg);
-  height: 300px;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 40vh;
   font-size: 40px;
   border: #688776 4px solid;
 }
@@ -244,8 +246,9 @@ main .contact h2 {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(images/banniere_section.jpg);
-  height: 300px;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 40vh;
   font-size: 40px;
   border: #688776 4px solid;
 }
@@ -262,13 +265,23 @@ main .contact div {
 
 main .contact div section p {
   margin: 20px;
-  border-bottom: #688776 2px solid;
   font-size: 25px;
+  position: relative;
+}
+
+main .contact div section p:after {
+  content: "";
+  border-bottom: #688776 2px solid;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
 }
 
 main .contact div form {
   border: #688776 2px solid;
   background-image: url(images/succulente.jpg);
+  background-position: 75% 25%;
   background-size: cover;
   border-radius: 5px;
   margin: 20px;
@@ -328,13 +341,225 @@ footer p {
   padding: 20px;
 }
 
-@media screen and (max-width: 599px) {
-  .menu .desktopMenu {
+@media screen and (max-width: 609px) {
+  header .menu .desktopMenu {
     display: none;
+  }
+  header .menu .navMobile {
+    background-color: #9db573;
+    height: 50px;
+  }
+  header .menu .navMobile .lines {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    float: left;
+    list-style-type: none;
+    margin: 5px;
+  }
+  header .menu .navMobile .lines li {
+    background-color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 4px;
+    margin: 2px;
+  }
+  header .menu .menuHidden {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9db573;
+    font-family: 'Cambria', sans-serif;
+  }
+  header .menu .menuHidden span {
+    text-align: center;
+    margin: 25px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  header .menu .menuHidden ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+  }
+  header .menu .menuHidden ul li {
+    line-height: 45px;
+  }
+  header .menu .menuHidden ul a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  header .background_image h1 {
+    font-size: 50px;
+    padding: 10px;
+  }
+  header .background_image p {
+    font-size: 25px;
+    padding: 10px;
+  }
+  main .flower_arrangement h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(images/section_mobile_left.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
+    font-size: 30px;
+    padding-right: 25px;
+    border: #688776 4px solid;
+  }
+  main .flower_arrangement article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .flower_arrangement article img {
+    width: 350px;
+  }
+  main .flower_arrangement article section {
+    width: 80%;
+  }
+  main .flower_arrangement article section p {
+    font-size: 18px;
+  }
+  main .plants h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(images/section_mobile_right.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
+    font-size: 30px;
+    padding-left: 25px;
+    border: #688776 4px solid;
+  }
+  main .plants article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .plants article section {
+    width: 80%;
+  }
+  main .plants article section p {
+    font-size: 18px;
+  }
+  main .plants article img {
+    width: 300px;
+  }
+  main .contact h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(images/section_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
+    font-size: 40px;
+    border: #688776 4px solid;
+  }
+  main .contact div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+  }
+  main .contact div section p {
+    font-size: 22px;
+  }
+  main .contact div section p:after {
+    width: 90px;
+  }
+  main .contact div form {
+    margin: 5px;
+    width: 90%;
+  }
+  main .contact div form h3 {
+    font-size: 22px;
+  }
+  main .contact div form div {
+    width: 90%;
+  }
+  main .contact div form div label {
+    font-size: 18px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 610px) and (max-width: 940px) {
+  main .flower_arrangement article img {
+    width: 350px;
+    margin: 80px 10px;
+  }
+  main .flower_arrangement article section {
+    height: 100vh;
+  }
+  main .plants article img {
+    width: 300px;
+    margin: 80px 20px;
+  }
+}
+
+@media screen and (min-width: 610px) {
   .menu .navMobile {
     display: none;
   }

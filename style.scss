@@ -11,11 +11,14 @@ $khakigreen: #688776;
     justify-content: center;
     align-items: center;
     background-image: url(images/banniere_section.jpg);
-    height: 300px;
-    background-size: 100%;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
     font-size: 40px;
     border: $khakigreen 4px solid;
 }
+
+
 
 @mixin button{
     background-color: $khakigreen;
@@ -186,14 +189,23 @@ main{
             section{
                 p{
                     margin: 20px;
-                    border-bottom: $khakigreen 2px solid;
                     font-size: 25px;
+                    position: relative;
+                }
+                p:after{
+                    content: "";
+                    border-bottom: $khakigreen 2px solid;
+                    position: absolute;
+                    left    : 0;
+                    bottom  : 0;
+                    width   : 55%;
                 }
             }
 
             form{
                 border: $khakigreen 2px solid;
                 background-image: url(images/succulente.jpg);
+                background-position: 75% 25%;
                 background-size: cover;
                 border-radius: 5px;
                 margin: 20px;
@@ -241,17 +253,206 @@ footer{
     }
 }
 
-@media screen and (max-width: 599px){
-    .menu{
-        .desktopMenu{
-            display: none;
+@media screen and (max-width: 609px){
+    header{
+        .menu{
+            .desktopMenu{
+                display: none;
+            }
+            .navMobile{
+                background-color: $lightgreen;
+                height: 50px; 
+                .lines{
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    float: left;
+                    list-style-type: none;
+                    margin: 5px;
+                    li{
+                        background-color: white;
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 4px;
+                        margin: 2px;
+                    }
+                }
+            }
+            .menuHidden{
+                display: none;
+                flex-direction: column;
+                width: 100vw;
+                height: 100vh;
+                background-color: $lightgreen;
+                font-family: 'Cambria', sans-serif;
+                span{
+                    text-align: center;
+                    margin: 25px;
+                    color: white;
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+                    
+                    li{
+                        line-height: 45px;
+                    }
+                    
+                    a{
+                    padding: 20px;
+                    text-decoration: none;
+                    color: white;
+                    }
+                }
+            }
+        }
+        .background_image{
+            h1{
+                font-size: 50px;
+                padding: 10px;  
+            }
+            p{
+                font-size: 25px;
+                padding: 10px; 
+            }
+        }    
+    }
+    main{
+        .flower_arrangement{
+            h2{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background-image: url(images/section_mobile_left.jpg);
+                background-repeat:no-repeat;
+                background-size: 100% 100%;
+                height: 40vh;
+                font-size: 30px;
+                padding-right: 25px;
+                border: $khakigreen 4px solid;
+            }
+    
+            article{
+                flex-direction: column;
+                justify-content: center;
+                img{
+                    width: 350px;
+                }
+                section{
+                    width: 80%;
+                    p{
+                        font-size: 18px;
+                    } 
+                }
+            } 
+        }
+        .plants{
+            h2{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                background-image: url(images/section_mobile_right.jpg);
+                background-repeat:no-repeat;
+                background-size: 100% 100%;
+                height: 40vh;
+                font-size: 30px;
+                padding-left: 25px;
+                border: $khakigreen 4px solid;
+            }
+    
+            article{
+                flex-direction: column-reverse;
+                justify-content: center;
+                section{
+                    width: 80%;
+                    p{
+                        font-size: 18px;
+                    } 
+                }
+                img{
+                    width: 300px;
+                }
+            }  
+        }
+    
+        .contact{
+            h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(images/section_mobile.jpg);
+                background-repeat:no-repeat;
+                background-size: 100% 100%;
+                height: 40vh;
+                font-size: 40px;
+                border: $khakigreen 4px solid;
+            }
+            div{
+                flex-direction: column-reverse;
+                justify-content: center;
+                margin: 20px;
+                section{
+                    p{
+                        font-size: 22px;
+                    }
+                    p:after{
+                        width : 90px;
+                    }
+                }
+    
+                form{
+                    margin: 5px;
+                    width: 90%;
+                    h3{
+                        font-size: 22px;
+                    }
+    
+                    div{
+                        width: 90%;
+                        label{
+                            font-size: 18px;
+                        }  
+                    }
+                }
+    
+            }
         }
     }
-        
-
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 610px) and (max-width: 940px){
+    main{
+        .flower_arrangement{
+            article{
+                img{
+                    width: 350px;
+                    margin: 80px 10px;
+                    
+                }
+                section{
+                    height: 100vh;
+                }
+            }
+        }
+        .plants{
+            article{
+                img{
+                    width: 300px;
+                    margin: 80px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 610px){
     .menu{
         .navMobile{
             display: none;
