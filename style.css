@@ -82,6 +82,7 @@ header .background_image p {
   text-align: center;
 }
 
+/* MAIN */
 main .flower_arrangement {
   color: #688776;
   font-family: 'Cambria';
@@ -358,6 +359,7 @@ main .contact div form #submit:hover {
   color: #688776;
 }
 
+/* FOOTER */
 footer {
   background-color: #9db573;
   height: 70px;
@@ -371,17 +373,18 @@ footer p {
   padding: 20px;
 }
 
+/* MEDIA QUERIES MOBILE */
 @media screen and (max-width: 609px) {
   header .menu .desktopMenu {
     display: none;
   }
   header .menu .navMobile {
     background-color: #9db573;
-    height: 50px;
+    height: 60px;
   }
   header .menu .navMobile .lines {
     position: absolute;
-    top: 5%;
+    top: 30px;
     left: 10%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -688,7 +691,7 @@ footer p {
             justify-content: center;
   }
   main .flower_arrangement article img {
-    width: 350px;
+    width: 300px;
   }
   main .flower_arrangement article section {
     width: 80%;
@@ -780,6 +783,7 @@ footer p {
   }
 }
 
+/* MEDIA QUERIES TABLET */
 @media screen and (min-width: 610px) and (max-width: 940px) {
   main .flower_arrangement article img {
     width: 350px;
