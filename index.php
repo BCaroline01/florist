@@ -72,10 +72,10 @@
             <div>
                 <section>
                     <p>Suivez-nous</p>
-                    <a href=""><img src="logo/icon-facebook.png" alt="icone facebook"></a>
-                    <a href=""><img src="logo/icon-instagram.png" alt="icone instagram"></a>
-                    <a href=""><img src="logo/icon-pinterest.png" alt="icone pinterest"></a>
-                    <a href=""><img src="logo/icon-youtube.png" alt="icone youtube"></a>
+                    <a href="#"><img src="logo/icon-facebook.png" alt="icone facebook"></a>
+                    <a href="#"><img src="logo/icon-instagram.png" alt="icone instagram"></a>
+                    <a href="#"><img src="logo/icon-pinterest.png" alt="icone pinterest"></a>
+                    <a href="#"><img src="logo/icon-youtube.png" alt="icone youtube"></a>
                 </section>
                 <form method="POST">
                     <h3>Envoyer une demande</h3>

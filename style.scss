@@ -107,6 +107,8 @@ header{
     } 
 }
 
+/* MAIN */
+
 main{
     .flower_arrangement{
         color: $khakigreen;
@@ -264,6 +266,8 @@ main{
     }
 }
 
+/* FOOTER */
+
 footer{
     background-color: $lightgreen;
     height: 70px;
@@ -275,6 +279,8 @@ footer{
         padding: 20px;
     }
 }
+
+/* MEDIA QUERIES MOBILE */
 
 @media screen and (max-width: 609px){
     header{
@@ -333,7 +339,7 @@ footer{
                     animation: ease .7s bottom-2 forwards;
                   }
                   
-                  @keyframes top {
+                @keyframes top {
                     0% {
                       top: 0;
                       transform: rotate(0);
@@ -346,9 +352,9 @@ footer{
                       top: 12px;
                       transform: rotate(45deg);
                     }
-                  }
+                }
                   
-                  @keyframes top-2 {
+                @keyframes top-2 {
                     0% {
                       top: 12px;
                       transform: rotate(45deg);
@@ -361,9 +367,9 @@ footer{
                       top: 0;
                       transform: rotate(0deg);
                     }
-                  }
+                }
                   
-                  @keyframes bottom {
+                @keyframes bottom {
                     0% {
                       bottom: 0;
                       transform: rotate(0);
@@ -376,9 +382,9 @@ footer{
                       bottom: 12px;
                       transform: rotate(135deg);
                     }
-                  }
+                }
                   
-                  @keyframes bottom-2 {
+                @keyframes bottom-2 {
                     0% {
                       bottom: 12px;
                       transform: rotate(135deg);
@@ -391,18 +397,18 @@ footer{
                       bottom: 0;
                       transform: rotate(0);
                     }
-                  }
+                }
                   
-                  @keyframes scaled {
+                @keyframes scaled {
                     50% {
                       transform: scale(0);
                     }
                     100% {
                       transform: scale(0);
                     }
-                  }
+                }
                   
-                  @keyframes scaled-2 {
+                @keyframes scaled-2 {
                     0% {
                       transform: scale(0);
                     }
@@ -412,7 +418,7 @@ footer{
                     100% {
                       transform: scale(1);
                     }
-                  }                  
+                }                  
             }
             .menuHidden{
                 display: none;
@@ -557,6 +563,8 @@ footer{
         }
     }
 }
+
+/* MEDIA QUERIES TABLET */
 
 @media screen and (min-width: 610px) and (max-width: 940px){
     main{
